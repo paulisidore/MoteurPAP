@@ -10,6 +10,8 @@
 MoteurPAP::MoteurPAP(int pinStep,int pinDir,int pinEn)
 {
   pinMode(pinStep, OUTPUT);
+  pinMode(pinDir, OUTPUT);
+  pinMode(pinEn, OUTPUT);
   _stepPin = pinStep;
   _dirPin=pinDir;
   _enPin=pinEn;
